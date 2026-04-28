@@ -1,0 +1,1 @@
+<b>footer d'admin</b>

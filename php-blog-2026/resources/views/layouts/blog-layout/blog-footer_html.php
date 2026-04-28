@@ -1,0 +1,1 @@
+<b>Footer du blog</b>
