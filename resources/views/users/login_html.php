@@ -5,24 +5,9 @@
             <img src="/publicAll/images/log.png" alt="Image d'arrière-plan">
         </div>
 
-        <!-- Colonne de droite : Formulaire d'inscription -->
+        <!-- Colonne de droite : Formulaire de connexion -->
         <div class="form-container">
             <form action="" method="POST">
-                 
-                <?php
-
-                if (! empty($success)) {
-                    echo '<div style=" background:green; text-align:center; color:white; padding:2px 8px; font-size:25px;">'
-                        .reset($success).
-                        '</div>';
-                }
-                if (! empty($errors)) {
-
-                    echo '<div style=" background:red; text-align:center; color:white; padding:2px 8px; font-size:25px;">'
-                        .reset($errors).
-                        '</div>';
-                }
-                ?>
                 
                 <div class="form-group">
                     <h2>Connection</h2>

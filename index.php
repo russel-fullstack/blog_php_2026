@@ -2,6 +2,7 @@
 declare(strict_types=1);
 session_start();
 require_once './database/database.php';
+require_once 'flash.php';
 
 $pageTitle = 'Notre blog d\'accueil';// Titre de la page d'accueil du blog
 ob_start();// créer un tampon de sortie pour stocker le contenu de la page d'accueil du blog

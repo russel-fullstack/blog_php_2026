@@ -14,6 +14,19 @@
 
 <body>
     <?php include 'blog-header_html.php'; ?>
+
+    <?php if ($flash = flash_get()): ?>
+      <div style="background-color: <?= $flash['type'] === 'success' ? '#d4edda' : '#f8d7da' ?>; 
+                  color: <?= $flash['type'] === 'success' ? '#155724' : '#721c24' ?>; 
+                  padding: 8px; 
+                  text-align: center; 
+                  border: 1px solid <?= $flash['type'] === 'success' ? '#c3e6cb' : '#f5c6cb' ?>;
+                  margin: 7px auto;
+                  max-width: 1000px;
+                  border-radius: 5px;">
+          <?= htmlspecialchars($flash['message']) ?>
+      </div>
+  <?php endif; ?>
     <main>
         <?= $pageContent ?>
     </main>
